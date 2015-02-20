@@ -1,6 +1,6 @@
 # @cjsx React.DOM
 
-PageStore = require("../stores/PageStore")
+PageStore = require("stores/PageStore")
 Page = React.createClass(
   getInitialState: ->
     page = PageStore.getPageFromKey(@props.page or "/")

@@ -1,5 +1,7 @@
-Brunch with React and Less
+Brunch React skeleton
 ==========================
+
+A fork from [Brunch with React and Less](https://github.com/warrenseine/brunch-react-less).
 
 A Brunch skeleton for cross-platform rapid development with React and Less. Just run `vagrant up` and edit the code.
 
@@ -13,6 +15,8 @@ A Brunch skeleton for cross-platform rapid development with React and Less. Just
 * Bower for front component management
 
 # Installation
+
+Just run `brunch w -s`
 
 For an isolated environment:
 
@@ -30,6 +34,8 @@ On your local host computer:
 5. `npm start`
 6. `tail -f log/err.log` for error reporting
 7. Open your browser at [http://localhost:3333](http://localhost:3333)
+
+
 
 # Contribute
 

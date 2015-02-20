@@ -7,8 +7,8 @@
     "bower_components"
   ],
   "dependencies": {
-    "react": "~0.10.0",
-    "react-router-component-bower": "https://github.com/andreypopp/react-router-component-bower.git"
+    "react": "~0.12.0",
+    "react-router": "~0.12.0"
   },
   "overrides": {
     "react": {

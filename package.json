@@ -1,9 +1,9 @@
 {
-  "author": "Your Name",
+  "author": "React Skeleton",
   "license": "MIT",
-  "name": "package-name",
+  "name": "brunch-react-skeleton",
   "version": "0.0.1",
-  "description": "Package description.",
+  "description": "Brunch react skeleton",
   "homepage": "",
   "repository": {
     "type": "git",
@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "forever": "latest",
+    "brunch": "latest"
+  },
+  "devDependencies": {
     "bower": "latest",
-    "brunch": "latest",
     "coffee-script": "latest",
     "es6-promise": "latest",
     "javascript-brunch": "latest",
@@ -21,10 +23,11 @@
     "auto-reload-brunch": "latest",
     "uglify-js-brunch": "latest",
     "clean-css-brunch": "latest",
+    "react-brunch": "latest",
     "cjsx-brunch": "latest"
   },
   "scripts": {
-    "start": "forever start -a -o log/out.log -e log/err.log --sourceDir node_modules/.bin brunch watch --server",
+    "start": "forever start -a -o log/out.log -e log/err.log --sourceDir ./node_modules/.bin brunch watch --server",
     "stop": "forever stopall ; killall npm node nodejs 2> /dev/null"
   }
 }

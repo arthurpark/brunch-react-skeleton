@@ -3,24 +3,23 @@ path = (paths) ->
   paths.join && paths = paths.join('|')
   paths = paths.replace(/\//g, '(\\/|\\\\)')
   new RegExp('^' + paths)
-  
+
 exports.config =
-  plugins:
-    react:
-      autoIncludeCommentBlock: yes
-      harmony: yes
-  conventions:
-    assets: path('app/assets')
+  # conventions:
+  #   assets: path('app/assets')
+
   modules2:
     definition: false
     wrapper: false
+
   paths:
-    public: '_public'
+    public: 'public'
+
   files:
     javascripts:
       joinTo:
-        'js/app.js': /^app/
         'js/vendor.js': /^vendor|bower_components/
+        'js/app.js': /^app/
       order:
         before: [
           "bower_components/react/react-with-addons.js",
@@ -31,3 +30,8 @@ exports.config =
     stylesheets:
       joinTo:
         'css/app.css': /^(app|vendor|bower_components)/
+
+  plugins:
+    react:
+      autoIncludeCommentBlock: yes
+      harmony: yes
